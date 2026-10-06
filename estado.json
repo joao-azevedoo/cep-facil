@@ -1,0 +1,13 @@
+{
+  "repositorioDestino": "joao-azevedoo/cep-facil",
+  "fusoHorario": "America/Sao_Paulo",
+  "inicio": "2026-10-06",
+  "fimPrevisto": "2026-10-12",
+  "horarioDiario": "09:00",
+  "etapaConcluidaLocalmente": 1,
+  "ultimaImplementacaoEm": "2026-10-06",
+  "etapaPublicada": 0,
+  "ultimaPublicacaoEm": null,
+  "situacao": "aguardando_acesso_ao_github_destino",
+  "bloqueioComunicadoEm": "2026-10-06"
+}
