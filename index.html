@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CEP Fácil — consulta de demonstração</title>
-  <meta name="description" content="Primeira versão do CEP Fácil: consulte dois endereços de demonstração a partir de seus CEPs.">
+  <meta name="description" content="Consulte dois endereços de demonstração sem recarregar a página.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/estilos.css">
@@ -18,13 +18,13 @@
     <p class="introducao">Encontre o endereço usando os oito números do CEP.</p>
     <section class="ferramenta" aria-labelledby="titulo-consulta">
       <h2 id="titulo-consulta">Qual endereço você procura?</h2>
-      <form action="index.html" method="get" novalidate>
+      <form id="formulario-consulta" action="index.html" method="get" novalidate>
         <label for="cep">CEP</label>
-        <div class="linha-busca"><input id="cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="01001-000" maxlength="12" aria-describedby="dica"><button type="submit">Consultar</button></div>
-        <p id="dica" class="dica">Digite com ou sem hífen. Exemplo: 01001000.</p>
+        <div class="linha-busca"><input id="cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="01001-000" maxlength="12" aria-describedby="dica mensagem"><button type="submit">Consultar</button></div>
+        <p id="dica" class="dica">Digite com ou sem hífen. Exemplo: 01001000. Pressione Enter ou clique em Consultar.</p>
       </form>
       <p id="mensagem" class="mensagem" role="status" hidden></p>
-      <section id="resultado" class="resultado" aria-labelledby="logradouro" hidden><span id="cep-resultado" class="cep-resultado"></span><h2 id="logradouro"></h2><dl><div><dt>Bairro</dt><dd id="bairro"></dd></div><div><dt>Cidade / UF</dt><dd id="cidade"></dd></div></dl><p class="dica">Endereço da base de demonstração.</p></section>
+      <section id="resultado" class="resultado" aria-labelledby="logradouro" hidden><span id="cep-resultado" class="cep-resultado"></span><h2 id="logradouro" tabindex="-1"></h2><dl><div><dt>Bairro</dt><dd id="bairro"></dd></div><div><dt>Cidade / UF</dt><dd id="cidade"></dd></div></dl><p class="dica">Endereço da base de demonstração.</p></section>
       <p id="vazio" class="vazio">Digite um dos CEPs disponíveis para experimentar a consulta.</p>
     </section>
     <aside class="demonstracao"><h2>Dois endereços para experimentar</h2><p>Esta versão usa uma base de demonstração. Escolha <strong>01001-000</strong> ou <strong>01310-100</strong>.</p></aside>

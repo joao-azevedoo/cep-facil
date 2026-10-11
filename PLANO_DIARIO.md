@@ -1,6 +1,10 @@
 # Sete dias de desenvolvimento
 
-Confirmado pelo usuário em 06/10/2026: conta `joao-azevedoo`, sete dias começando hoje, atualizações automáticas às **9h, horário de Brasília**. Repositório planejado: `joao-azevedoo/cep-facil`. Entrega final prevista: **12/10/2026**.
+Confirmado pelo usuário em 06/10/2026: conta `joao-azevedoo`, sete incrementos e atualizações automáticas às **9h, horário de Brasília**. Repositório: `joao-azevedoo/cep-facil`. Prazo original: **12/10/2026**. Em 11/10, o usuário alterou o encerramento da rotina para **14/10/2026**, mantendo uma nova etapa por dia.
+
+## Cronograma original
+
+As datas abaixo registram o planejamento inicial, sem afirmar que as etapas foram executadas nessas datas.
 
 | Dia | Data | Incremento | Mudança concreta | Conferência |
 | --- | --- | --- | --- | --- |
@@ -12,15 +16,29 @@ Confirmado pelo usuário em 06/10/2026: conta `joao-azevedoo`, sete dias começa
 | 6 | 11/10 | Web APIs | Copiar endereço com Clipboard e permitir seleção manual quando bloqueado. | Copiar e colar; conferir alternativa manual. |
 | 7 | 12/10 | Publicação e monetização | GitHub Pages, revisão em celular, rodapé pessoal, espaço de anúncio e documentação final. | URL pública HTTPS, consulta e recursos estáticos corretos; explicar estratégia de receita. |
 
-Cada dia acrescenta a funcionalidade da etapa, atualiza README e CHANGELOG, registra verificações e gera um commit com a data real. O primeiro incremento é preparado hoje; a primeira execução automática ocorre amanhã, 07/10, às 9h.
+Cada incremento acrescenta uma funcionalidade, atualiza README e CHANGELOG, registra verificações e gera um commit com a data real. O primeiro incremento foi preparado em 06/10; as execuções de 07 a 11/10 mantiveram o envio pendente enquanto faltava acesso.
+
+## Cronograma reajustado em 11/10
+
+| Etapa | Data efetiva ou prevista | Situação |
+| --- | --- | --- |
+| 1 | Implementada em 06/10, enviada em 11/10 | Código confirmado no GitHub. |
+| 2 | 11/10 | DOM e eventos implementados e verificados após o envio pendente; consultar o estado para o envio efetivo. |
+| 3 | 12/10, às 9h | Histórico local, após conferir o envio da etapa 2. |
+| 4 | 13/10, às 9h | ViaCEP, após conferir o envio da etapa 3. |
+| 5 | 14/10, às 9h | Concorrência, alternativa e cancelamento; última execução autorizada. |
+| 6 | Sem data autorizada | Clipboard e alternativa manual ficam pendentes. |
+| 7 | Sem data autorizada | GitHub Pages, revisão final e monetização ficam pendentes. |
+
+Esse calendário é uma previsão sujeita às verificações de cada etapa. Ao encerrar em 14/10, relatar o que permanecer pendente. Não antecipar as etapas 6 e 7 nem continuar mudanças após o prazo sem nova autorização.
 
 ## Acesso necessário
 
-Foi conferido que `joao-azevedoo` existe e não possui repositórios públicos no momento da preparação. A conta atualmente conectada e a autenticação local pertencem a `MatFernandex`, sem acesso à conta desejada.
+Em 11/10/2026, o usuário autorizou o Git Credential Manager com a conta `joao-azevedoo`. O acesso de escrita a `joao-azevedoo/cep-facil` foi confirmado e a primeira etapa enviada. O commit original de 06/10 foi preservado; o envio ocorreu efetivamente em 11/10. A configuração local deste repositório seleciona a conta correta, sem alterar a configuração global.
 
-Para permitir o envio automático, conectar a conta `joao-azevedoo` neste ambiente **ou** criar `joao-azevedoo/cep-facil` e conceder colaboração de escrita à conta conectada `MatFernandex`. Entradas de senha/autenticação devem acontecer na interface oficial, nunca no chat ou no código. Não enviar a versão completa anterior.
+O cronograma original sofreu atraso. A sequência continua pela próxima etapa, com no máximo um novo incremento por data real e encerramento em 14/10, autorizado pelo usuário. Entradas de senha/autenticação devem acontecer na interface oficial, nunca no chat ou no código. Não enviar a versão completa anterior.
 
-Se o acesso não estiver disponível, a rotina mantém a etapa atual pendente e não acumula novos incrementos. O limite de 12/10 permanece; eventual atraso será informado, sem antecipar vários dias de trabalho em uma execução.
+Se o acesso deixar de estar disponível, a rotina mantém a etapa atual pendente e não acumula novos incrementos. O limite de 14/10 permanece; eventual atraso será informado, sem antecipar vários dias de trabalho em uma execução.
 
 ## Rotina local
 

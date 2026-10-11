@@ -1,5 +1,24 @@
 # Histórico de desenvolvimento
 
+## 11/10/2026 — Etapa 2: DOM e eventos
+
+- Formulário interceptado com `submit` e `preventDefault`; consulta pelo botão ou Enter sem navegação convencional.
+- Mensagens e endereço atualizados no DOM, sem recarregar a página.
+- Edição da entrada limpa o erro e o endereço anteriores. Formato inválido recebe `aria-invalid`; CEP válido fora da base recebe somente a explicação da limitação.
+- Foco vai para o resultado encontrado ou retorna ao campo para correção; links antigos com `?cep=...` foram preservados.
+- Rotina estendida pelo usuário até 14/10, às 9h de Brasília, mantendo uma etapa nova por dia. As etapas 6 e 7 permanecem sem nova data autorizada.
+
+Verificação: consulta de `01001000` pelo botão e `01310-100` por Enter mantiveram a URL original e mostraram os endereços corretos; entrada incompleta, correção do erro, retirada do resultado anterior, CEP fora da base e link antigo conferidos. Foco correto nas transições; console sem erros ou avisos. Sintaxe JavaScript e diferenças de arquivos verificadas. Nenhum recurso das etapas 3 a 7 foi antecipado.
+
+## 11/10/2026 — Envio da primeira etapa
+
+- Conta `joao-azevedoo` autenticada pelo usuário no Git Credential Manager; permissão de escrita conferida no repositório exato.
+- Etapa 1 enviada ao repositório público `joao-azevedoo/cep-facil`, anteriormente vazio.
+- Commit `34ef63e31c83cd566bb98945f93f52fdf13fce12` conferido no ramo remoto `main`, preservando a autoria e a data original de 06/10.
+- Três testes da primeira etapa aprovados novamente antes do envio. O atraso do cronograma foi informado ao usuário.
+
+Esta conferência registra o envio de código. O site será publicado somente na etapa 7.
+
 ## 06/10/2026 — Etapa 1: JavaScript básico
 
 - Página inicial em HTML e CSS, com formulário HTML por GET.
@@ -10,4 +29,4 @@
 
 Verificação: três testes automatizados aprovados; consulta dos dois exemplos e entrada incompleta conferidas no navegador. O envio convencional do formulário recarrega a página e adiciona o CEP à URL, como previsto para esta etapa. Console sem erros ou avisos.
 
-O envio a `joao-azevedoo/cep-facil` está pendente de acesso. As próximas funcionalidades serão implementadas nos respectivos dias, depois da publicação desta etapa.
+Na data desta implementação, o envio a `joao-azevedoo/cep-facil` ficou pendente de acesso. O envio efetivo ocorreu em 11/10/2026, conforme registro acima.
