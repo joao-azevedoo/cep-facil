@@ -10,6 +10,8 @@
 
 Verificação: consulta de `01001000` pelo botão e `01310-100` por Enter mantiveram a URL original e mostraram os endereços corretos; entrada incompleta, correção do erro, retirada do resultado anterior, CEP fora da base e link antigo conferidos. Foco correto nas transições; console sem erros ou avisos. Sintaxe JavaScript e diferenças de arquivos verificadas. Nenhum recurso das etapas 3 a 7 foi antecipado.
 
+Envio confirmado em 11/10/2026: commit funcional `5b5d55ce7475c47e2e07b3e79a65b37759bff38b` conferido em `refs/heads/main` de `joao-azevedoo/cep-facil`. O estado foi atualizado após essa evidência.
+
 ## 11/10/2026 — Envio da primeira etapa
 
 - Conta `joao-azevedoo` autenticada pelo usuário no Git Credential Manager; permissão de escrita conferida no repositório exato.

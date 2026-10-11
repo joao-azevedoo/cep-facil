@@ -6,10 +6,11 @@
   "horarioDiario": "09:00",
   "etapaConcluidaLocalmente": 2,
   "ultimaImplementacaoEm": "2026-10-11",
-  "etapaPublicada": 1,
+  "etapaPublicada": 2,
   "ultimaPublicacaoEm": "2026-10-11",
-  "situacao": "aguardando_envio_da_etapa_atual",
+  "situacao": "em_desenvolvimento_diario",
   "bloqueioComunicadoEm": "2026-10-06",
   "acessoConfirmadoEm": "2026-10-11",
-  "contaEnvio": "joao-azevedoo"
+  "contaEnvio": "joao-azevedoo",
+  "commitFuncionalPublicado": "5b5d55ce7475c47e2e07b3e79a65b37759bff38b"
 }
