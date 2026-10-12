@@ -23,14 +23,16 @@ Cada incremento acrescenta uma funcionalidade, atualiza README e CHANGELOG, regi
 | Etapa | Data efetiva ou prevista | Situação |
 | --- | --- | --- |
 | 1 | Implementada em 06/10, enviada em 11/10 | Código confirmado no GitHub. |
-| 2 | 11/10 | DOM e eventos implementados, verificados e enviados; commit funcional `5b5d55c` confirmado no GitHub. |
-| 3 | 12/10 | Histórico local implementado, verificado e enviado; commit funcional `1a7d792` confirmado no GitHub. |
+| 2 | 11/10 | DOM e eventos implementados, verificados e enviados; commit funcional atual `ed420b5` confirmado no GitHub. |
+| 3 | 12/10 | Histórico local implementado, verificado e enviado; commit funcional atual `bef6051` confirmado no GitHub. |
 | 4 | 13/10, às 9h | ViaCEP, após conferir o envio da etapa 3. |
 | 5 | 14/10, às 9h | Concorrência, alternativa e cancelamento; última execução autorizada. |
 | 6 | Sem data autorizada | Clipboard e alternativa manual ficam pendentes. |
 | 7 | Sem data autorizada | GitHub Pages, revisão final e monetização ficam pendentes. |
 
 Esse calendário é uma previsão sujeita às verificações de cada etapa. Ao encerrar em 14/10, relatar o que permanecer pendente. Não antecipar as etapas 6 e 7 nem continuar mudanças após o prazo sem nova autorização.
+
+Em 12/10, o usuário autorizou corrigir a autoria dos cinco commits antigos para `joao-azevedoo`. A correção alterou os identificadores Git e foi conferida no GitHub; arquivos, mensagens e datas foram preservados. O `CHANGELOG.md` mantém os identificadores originais como registro dos envios e apresenta a correspondência com os atuais. A sequência das etapas continua igual.
 
 ## Acesso necessário
 

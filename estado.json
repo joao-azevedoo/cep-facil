@@ -14,5 +14,7 @@
   "contaEnvio": "joao-azevedoo",
   "autorCommits": "joao-azevedoo",
   "autoriaConfiguradaEm": "2026-10-12",
-  "commitFuncionalPublicado": "1a7d79221cccb456443042a19abb35d5a3f55d26"
+  "autoriaHistoricaCorrigidaEm": "2026-10-12",
+  "commitsComAutoriaCorrigida": 5,
+  "commitFuncionalPublicado": "bef605129adf01c0a6d8558f0671f34ba715323e"
 }

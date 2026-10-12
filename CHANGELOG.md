@@ -1,10 +1,29 @@
 # Histórico de desenvolvimento
 
+## 12/10/2026 — Correção autorizada da autoria anterior
+
+- O usuário autorizou explicitamente substituir o histórico de `main` para corrigir a autoria dos cinco commits antigos para `joao-azevedoo`.
+- Cópia de segurança completa e verificada mantida localmente em `.operacao/antes-da-correcao-autoria.bundle`, sem envio ao repositório.
+- Todos os seis commits existentes passaram a ter autor e committer associados a `joao-azevedoo` no GitHub. O sexto já usava essa identidade e recebeu novo identificador porque seu antecessor mudou.
+- Cada árvore de arquivos, mensagem, data de autoria e data de commit foi comparada com o original e permaneceu idêntica. O envio usou proteção contra mudanças remotas com `force-with-lease`, limitado ao `main` deste repositório.
+- Autoria conferida pela API do GitHub em cada commit corrigido; estado e plano ajustados aos identificadores atuais. A etapa funcional continua sendo a etapa 3.
+
+Os registros de envio abaixo mantêm os identificadores observados na ocasião. A correspondência após a correção é:
+
+| Commit original | Commit atual | Registro |
+| --- | --- | --- |
+| `34ef63e` | `b9b6d87` | Etapa 1 |
+| `5b5d55c` | `ed420b5` | Etapa 2 |
+| `9623ac6` | `adb5e64` | Confirmação do envio da etapa 2 |
+| `1a7d792` | `bef6051` | Etapa 3 |
+| `b278dfe` | `aaa1557` | Confirmação do envio da etapa 3 |
+| `a71cb52` | `b0197dc` | Configuração da autoria |
+
 ## 12/10/2026 — Configuração de autoria solicitada pelo usuário
 
 - Perfil autenticado `joao-azevedoo` confirmado pela API do GitHub, com acesso de escrita ao repositório de destino.
 - Autor e committer configurados localmente para `joao-azevedoo`, usando o email `noreply` correspondente ao ID público da conta. A configuração global e os outros projetos foram preservados.
-- Instruções para as próximas atualizações ajustadas para conferir a autoria antes de cada commit. Os cinco commits anteriores continuam com sua autoria original enquanto não houver autorização específica para reescrever o histórico.
+- Instruções para as próximas atualizações ajustadas para conferir a autoria antes de cada commit. Nesse momento, os cinco commits anteriores aguardavam autorização específica para corrigir sua autoria; a autorização e a correção posteriores estão registradas acima.
 
 Esta alteração é uma correção de configuração. A etapa funcional continua sendo a etapa 3; nenhum incremento futuro foi antecipado.
 

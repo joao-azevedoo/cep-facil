@@ -2,7 +2,9 @@
 
 ## 12/10/2026 — Autoria Git
 
-Por solicitação expressa do usuário, configurar o autor e o committer como `joao-azevedoo` apenas neste repositório. A conta autenticada foi confirmada pela API do GitHub, e o email `noreply` segue o formato de ID e nome de usuário documentado pelo GitHub. A autenticação utilizada no envio não define a autoria de um commit: é necessário conferir também a configuração local e as identidades efetivas do Git. Os commits antigos permanecem preservados; corrigir sua autoria requer autorização específica para reescrever o histórico remoto.
+Por solicitação expressa do usuário, configurar o autor e o committer como `joao-azevedoo` apenas neste repositório. A conta autenticada foi confirmada pela API do GitHub, e o email `noreply` segue o formato de ID e nome de usuário documentado pelo GitHub. A autenticação utilizada no envio não define a autoria de um commit: é necessário conferir também a configuração local e as identidades efetivas do Git.
+
+O usuário autorizou posteriormente corrigir os cinco commits antigos, substituindo o histórico publicado de `main`. Antes da operação, criar e verificar uma cópia de segurança completa. Reconstruir os commits mantendo exatamente as árvores de arquivos, mensagens, datas e relações entre antecessores, alterando somente autor e committer. Conferir cada comparação e a ausência de mudanças remotas; enviar exclusivamente para `main` com `force-with-lease` vinculado ao identificador remoto observado. A operação foi concluída, e a API do GitHub confirmou `joao-azevedoo` como autor e committer de todos os seis commits existentes. Atualizar os identificadores no estado e no plano em um novo commit convencional, mantendo os registros históricos dos envios. Essa autorização pontual não permite novas reescritas automáticas.
 
 ## 12/10/2026 — Histórico local
 

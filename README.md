@@ -86,4 +86,6 @@ O acesso ao repositório foi liberado em 11/10. O usuário estendeu a rotina at�
 
 ## Autoria dos commits
 
-Em 12/10, a pedido do usuário, a identidade Git deste repositório foi configurada para `joao-azevedoo`, conta autenticada e confirmada no GitHub. Novos commits usam seu email `noreply` fornecido pelo GitHub. O envio e a autoria são configurações distintas: os cinco commits anteriores foram enviados à conta correta, mas herdaram a identidade global `MatFernandex`. O histórico anterior permanece preservado; sua correção requer autorização específica para reescrevê-lo.
+Em 12/10, a pedido do usuário, a identidade Git deste repositório foi configurada para `joao-azevedoo`, conta autenticada e confirmada no GitHub. Novos commits usam seu email `noreply` correspondente ao ID público da conta. A configuração é local a este projeto.
+
+O usuário também autorizou corrigir a autoria dos cinco commits antigos. A correção foi enviada e conferida no GitHub: todo o histórico de `main` agora está associado a `joao-azevedoo`, como autor e committer. Arquivos, mensagens e datas foram preservados; somente as identidades e os identificadores resultantes mudaram. Há uma cópia de segurança local do histórico original e a correspondência dos commits está no `CHANGELOG.md`.
