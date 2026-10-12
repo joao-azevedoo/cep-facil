@@ -24,7 +24,7 @@ Cada incremento acrescenta uma funcionalidade, atualiza README e CHANGELOG, regi
 | --- | --- | --- |
 | 1 | Implementada em 06/10, enviada em 11/10 | Código confirmado no GitHub. |
 | 2 | 11/10 | DOM e eventos implementados, verificados e enviados; commit funcional `5b5d55c` confirmado no GitHub. |
-| 3 | 12/10 | Histórico local implementado e verificado após conferir a etapa 2; consultar o estado para o envio efetivo. |
+| 3 | 12/10 | Histórico local implementado, verificado e enviado; commit funcional `1a7d792` confirmado no GitHub. |
 | 4 | 13/10, às 9h | ViaCEP, após conferir o envio da etapa 3. |
 | 5 | 14/10, às 9h | Concorrência, alternativa e cancelamento; última execução autorizada. |
 | 6 | Sem data autorizada | Clipboard e alternativa manual ficam pendentes. |

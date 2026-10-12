@@ -10,6 +10,8 @@
 
 Verificação: oito testes automatizados aprovados, cobrindo validação da consulta, persistência, limite de cinco com uma sexta entrada de teste, duplicatas, limpeza sem afetar outra chave, dados corrompidos e armazenamento bloqueado. No navegador, os dois exemplos foram salvos e recuperados após recarregar; reabrir um item o moveu para o início sem duplicá-lo; um CEP fora da base não foi salvo. Limpeza e recarregamento confirmaram a lista vazia, inclusive em um link antigo. Foco correto; console sem erros ou avisos; prévia visual conferida.
 
+Envio confirmado em 12/10/2026: commit funcional `1a7d79221cccb456443042a19abb35d5a3f55d26` conferido em `refs/heads/main` de `joao-azevedoo/cep-facil`. O estado foi atualizado após essa evidência. O envio contém somente a evolução de código; o site permanece para a etapa 7.
+
 ## 11/10/2026 — Etapa 2: DOM e eventos
 
 - Formulário interceptado com `submit` e `preventDefault`; consulta pelo botão ou Enter sem navegação convencional.
