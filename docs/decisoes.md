@@ -1,5 +1,9 @@
 # Decisões do CEP Fácil
 
+## 12/10/2026 — Autoria Git
+
+Por solicitação expressa do usuário, configurar o autor e o committer como `joao-azevedoo` apenas neste repositório. A conta autenticada foi confirmada pela API do GitHub, e o email `noreply` segue o formato de ID e nome de usuário documentado pelo GitHub. A autenticação utilizada no envio não define a autoria de um commit: é necessário conferir também a configuração local e as identidades efetivas do Git. Os commits antigos permanecem preservados; corrigir sua autoria requer autorização específica para reescrever o histórico remoto.
+
 ## 12/10/2026 — Histórico local
 
 - Guardar somente uma lista de CEPs formatados na chave `cep-facil.historico`, com até cinco itens, sem cópias dos endereços. Reabrir um item executa a mesma consulta usada pelo formulário.

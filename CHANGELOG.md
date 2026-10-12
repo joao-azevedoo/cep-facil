@@ -1,5 +1,13 @@
 # Histórico de desenvolvimento
 
+## 12/10/2026 — Configuração de autoria solicitada pelo usuário
+
+- Perfil autenticado `joao-azevedoo` confirmado pela API do GitHub, com acesso de escrita ao repositório de destino.
+- Autor e committer configurados localmente para `joao-azevedoo`, usando o email `noreply` correspondente ao ID público da conta. A configuração global e os outros projetos foram preservados.
+- Instruções para as próximas atualizações ajustadas para conferir a autoria antes de cada commit. Os cinco commits anteriores continuam com sua autoria original enquanto não houver autorização específica para reescrever o histórico.
+
+Esta alteração é uma correção de configuração. A etapa funcional continua sendo a etapa 3; nenhum incremento futuro foi antecipado.
+
 ## 12/10/2026 — Etapa 3: histórico local
 
 - Até cinco consultas encontradas salvas em `localStorage`, do uso mais recente para o mais antigo, sem duplicar CEPs com e sem hífen.

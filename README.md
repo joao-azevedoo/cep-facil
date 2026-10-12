@@ -83,3 +83,7 @@ O rodapé aponta para o perfil do autor da conta de destino. O site pessoal do a
 ## Calendário atual
 
 O acesso ao repositório foi liberado em 11/10. O usuário estendeu a rotina até **14/10/2026, às 9h de Brasília**, mantendo uma nova etapa por dia. O histórico foi implementado em 12/10. A previsão seguinte é ViaCEP em 13/10 e concorrência em 14/10. Clipboard e GitHub Pages ficam pendentes de uma nova data autorizada. O plano registra o calendário original e o reajuste sem alterar datas dos commits.
+
+## Autoria dos commits
+
+Em 12/10, a pedido do usuário, a identidade Git deste repositório foi configurada para `joao-azevedoo`, conta autenticada e confirmada no GitHub. Novos commits usam seu email `noreply` fornecido pelo GitHub. O envio e a autoria são configurações distintas: os cinco commits anteriores foram enviados à conta correta, mas herdaram a identidade global `MatFernandex`. O histórico anterior permanece preservado; sua correção requer autorização específica para reescrevê-lo.
