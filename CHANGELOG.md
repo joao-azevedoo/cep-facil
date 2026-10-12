@@ -1,5 +1,15 @@
 # Histórico de desenvolvimento
 
+## 12/10/2026 — Etapa 3: histórico local
+
+- Até cinco consultas encontradas salvas em `localStorage`, do uso mais recente para o mais antigo, sem duplicar CEPs com e sem hífen.
+- Botões para reabrir uma consulta salva e limpar somente o histórico desta aplicação.
+- Persistência após recarregar, leitura segura de dados inválidos e histórico temporário com aviso quando o armazenamento é bloqueado.
+- Links antigos continuam exibindo o endereço, sem recriar registros apagados ao recarregar a página.
+- Decisões documentadas em `docs/decisoes.md`. A base permanece com dois CEPs; nenhum recurso das etapas 4 a 7 foi antecipado.
+
+Verificação: oito testes automatizados aprovados, cobrindo validação da consulta, persistência, limite de cinco com uma sexta entrada de teste, duplicatas, limpeza sem afetar outra chave, dados corrompidos e armazenamento bloqueado. No navegador, os dois exemplos foram salvos e recuperados após recarregar; reabrir um item o moveu para o início sem duplicá-lo; um CEP fora da base não foi salvo. Limpeza e recarregamento confirmaram a lista vazia, inclusive em um link antigo. Foco correto; console sem erros ou avisos; prévia visual conferida.
+
 ## 11/10/2026 — Etapa 2: DOM e eventos
 
 - Formulário interceptado com `submit` e `preventDefault`; consulta pelo botão ou Enter sem navegação convencional.

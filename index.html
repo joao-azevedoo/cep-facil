@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CEP Fácil — consulta de demonstração</title>
-  <meta name="description" content="Consulte dois endereços de demonstração sem recarregar a página.">
+  <meta name="description" content="Consulte dois endereços de demonstração e reabra suas consultas pelo histórico local.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/estilos.css">
   <script src="js/cep.js" defer></script>
+  <script src="js/historico.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -26,6 +27,13 @@
       <p id="mensagem" class="mensagem" role="status" hidden></p>
       <section id="resultado" class="resultado" aria-labelledby="logradouro" hidden><span id="cep-resultado" class="cep-resultado"></span><h2 id="logradouro" tabindex="-1"></h2><dl><div><dt>Bairro</dt><dd id="bairro"></dd></div><div><dt>Cidade / UF</dt><dd id="cidade"></dd></div></dl><p class="dica">Endereço da base de demonstração.</p></section>
       <p id="vazio" class="vazio">Digite um dos CEPs disponíveis para experimentar a consulta.</p>
+    </section>
+    <section class="historico" aria-labelledby="titulo-historico">
+      <div class="cabecalho-historico"><h2 id="titulo-historico" tabindex="-1">Consultas recentes</h2><button id="limpar-historico" class="botao-sutil" type="button" disabled>Limpar histórico</button></div>
+      <p class="dica">Até cinco CEPs neste navegador. Clique em um deles para consultar novamente.</p>
+      <ul id="lista-historico" class="lista-historico"></ul>
+      <p id="historico-vazio" class="dica" role="status">Nenhuma consulta salva ainda.</p>
+      <p id="aviso-historico" class="mensagem" role="status" hidden>Não foi possível salvar o histórico neste navegador. As mudanças valem apenas enquanto esta página estiver aberta.</p>
     </section>
     <aside class="demonstracao"><h2>Dois endereços para experimentar</h2><p>Esta versão usa uma base de demonstração. Escolha <strong>01001-000</strong> ou <strong>01310-100</strong>.</p></aside>
     <noscript><p>Ative o JavaScript para consultar o endereço.</p></noscript>

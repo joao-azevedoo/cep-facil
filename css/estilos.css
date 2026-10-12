@@ -30,6 +30,12 @@ dl { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 18px 0; }
 dt { font-size: .875rem; color: var(--color-neutral-700); }
 dd { margin: 2px 0 0; font-weight: 600; overflow-wrap: anywhere; }
 .vazio { margin-top: 22px; border-top: 1px solid var(--color-divider); padding-top: 20px; color: var(--color-neutral-700); }
+.historico { margin-top: 24px; padding: 22px 0; border-top: 1px solid var(--color-divider); }
+.cabecalho-historico { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.lista-historico { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0; padding: 0; list-style: none; }
+.botao-sutil { color: var(--color-brand-700); background: var(--color-paper); border: 1px solid var(--color-neutral-300); padding: 8px 14px; }
+.botao-sutil:hover:not(:disabled) { background: var(--color-neutral-100); }
+.botao-sutil:disabled { color: var(--color-neutral-600); background: var(--color-paper); cursor: default; }
 .demonstracao { padding: 22px 0; }
 .demonstracao p { color: var(--color-neutral-700); margin-top: 6px; }
 footer { border-top: 1px solid var(--color-divider); padding: 24px 0; font-size: .875rem; color: var(--color-neutral-700); }
