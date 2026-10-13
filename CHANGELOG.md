@@ -1,5 +1,17 @@
 # Histórico de desenvolvimento
 
+## 13/10/2026 — Etapa 4: consulta real ao ViaCEP
+
+- Base de demonstração substituída pela consulta HTTPS ao ViaCEP com `fetch`, `async`/`await` e JSON; CEP validado antes da requisição.
+- Apresentação de carregamento, permitindo uma consulta por vez, e mensagens distintas para CEP inexistente e falha de conexão/serviço.
+- Resposta conferida antes de mostrar o endereço. CEP geral sem logradouro ou bairro mantém cidade/UF e apresenta textos explicativos.
+- Histórico, reabertura, foco e links antigos preservados. Somente consultas encontradas entram no histórico.
+- README, plano e decisões atualizados. Nenhuma funcionalidade das etapas 5 a 7 foi antecipada.
+
+Verificação: doze testes automatizados aprovados, incluindo rede/HTTP/JSON inválidos e os cinco testes de persistência. No navegador, o ViaCEP retornou Praça da Sé em São Paulo e Avenida Rio Branco no Rio de Janeiro. Busca pelo botão e Enter, CEP inexistente, entrada incompleta, carregamento, persistência/reabertura do histórico e limpeza em link antigo foram conferidos. Falha de conexão simulada em página de QA local e ignorada liberou os controles, preservou o histórico e retornou o foco ao campo. Console sem erros ou avisos; prévia visual conferida.
+
+O envio desta etapa ainda aguarda conferência do commit remoto. A publicação do site continua prevista somente na etapa 7.
+
 ## 12/10/2026 — Correção autorizada da autoria anterior
 
 - O usuário autorizou explicitamente substituir o histórico de `main` para corrigir a autoria dos cinco commits antigos para `joao-azevedoo`.

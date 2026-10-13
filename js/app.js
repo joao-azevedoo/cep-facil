@@ -1,5 +1,6 @@
-// Etapas 2 e 3: eventos atualizam o DOM e mantêm o histórico local.
+// Etapas 2 a 4: eventos, histórico local e apresentação da consulta assíncrona.
 const formulario = document.getElementById('formulario-consulta');
+const botaoConsultar = formulario.querySelector('button[type="submit"]');
 const campoCep = document.getElementById('cep');
 const mensagem = document.getElementById('mensagem');
 const resultado = document.getElementById('resultado');
@@ -8,6 +9,7 @@ const logradouro = document.getElementById('logradouro');
 const historico = window.CepHistorico.criarHistorico();
 const listaHistorico = document.getElementById('lista-historico');
 const limparHistorico = document.getElementById('limpar-historico');
+let consultando = false;
 
 function apresentarHistorico() {
   const ceps = historico.listar();
@@ -17,6 +19,7 @@ function apresentarHistorico() {
     const botao = document.createElement('button');
     botao.type = 'button';
     botao.className = 'botao-sutil';
+    botao.disabled = consultando;
     botao.textContent = cep;
     botao.setAttribute('aria-label', 'Consultar novamente o CEP ' + cep);
     botao.addEventListener('click', function () {
@@ -26,7 +29,7 @@ function apresentarHistorico() {
     item.appendChild(botao);
     listaHistorico.appendChild(item);
   }
-  limparHistorico.disabled = ceps.length === 0;
+  limparHistorico.disabled = consultando || ceps.length === 0;
   document.getElementById('historico-vazio').hidden = ceps.length > 0;
   document.getElementById('aviso-historico').hidden = historico.persistente();
 }
@@ -34,14 +37,37 @@ function apresentarHistorico() {
 function limparApresentacao() {
   mensagem.hidden = true;
   mensagem.textContent = '';
+  mensagem.removeAttribute('data-tipo');
   resultado.hidden = true;
   campoCep.removeAttribute('aria-invalid');
 }
 
-function apresentarConsulta(entrada, orientarFoco, incluirNoHistorico = true) {
+function alterarCarregamento(ativo) {
+  consultando = ativo;
+  formulario.setAttribute('aria-busy', String(ativo));
+  campoCep.disabled = ativo;
+  botaoConsultar.disabled = ativo;
+  botaoConsultar.textContent = ativo ? 'Consultando…' : 'Consultar';
+  for (const botao of listaHistorico.querySelectorAll('button')) botao.disabled = ativo;
+  limparHistorico.disabled = ativo || historico.listar().length === 0;
+}
+
+async function apresentarConsulta(entrada, orientarFoco, incluirNoHistorico = true) {
+  // Nesta etapa, permita uma consulta por vez. Cancelamento entra na etapa 5.
+  if (consultando) return;
   limparApresentacao();
   vazio.hidden = true;
-  const consulta = window.CepBasico.consultarCep(entrada);
+  if (window.CepBasico.normalizarCep(entrada)) {
+    alterarCarregamento(true);
+    mensagem.textContent = 'Consultando o ViaCEP…';
+    mensagem.setAttribute('data-tipo', 'carregando');
+    mensagem.hidden = false;
+  }
+  let consulta;
+  try { consulta = await window.CepBasico.consultarCep(entrada); }
+  finally { alterarCarregamento(false); }
+  mensagem.hidden = true;
+  mensagem.removeAttribute('data-tipo');
   if (consulta.sucesso) {
     const endereco = consulta.endereco;
     campoCep.value = endereco.cep;

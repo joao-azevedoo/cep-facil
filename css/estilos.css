@@ -20,9 +20,11 @@ input { flex: 1; min-width: 0; padding: 10px 14px; border: 1px solid var(--color
 input[aria-invalid="true"] { border-color: var(--color-accent-700); }
 button { border: 0; padding: 10px 22px; background: var(--color-brand-700); color: var(--color-paper); cursor: pointer; font-weight: 600; }
 button:hover { background: var(--color-brand-900); }
+.linha-busca button:disabled { background: var(--color-neutral-600); cursor: wait; }
 :focus-visible { outline: 3px solid var(--color-brand-600); outline-offset: 3px; }
 .dica { color: var(--color-neutral-700); font-size: .875rem; margin-top: 8px; }
 .mensagem { color: var(--color-accent-700); background: var(--color-accent-100); padding: 12px; border-radius: var(--radius-sm); margin-top: 22px; }
+.mensagem[data-tipo="carregando"] { color: var(--color-neutral-800); background: var(--color-neutral-100); }
 .resultado { border-top: 1px solid var(--color-divider); margin-top: 26px; padding-top: 22px; }
 .cep-resultado { color: var(--color-neutral-700); font-size: .875rem; }
 .resultado h2 { font-size: 1.55rem; margin-top: 4px; overflow-wrap: anywhere; }

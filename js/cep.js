@@ -1,10 +1,6 @@
-// Etapa 1: funções, condicionais, strings, arrays, objetos e laço de pesquisa.
+// Etapa 4: validação local e consulta real ao ViaCEP com fetch e JSON.
 (function (global) {
   'use strict';
-  const enderecosDemonstracao = [
-    { cep: '01001000', logradouro: 'Praça da Sé', bairro: 'Sé', cidade: 'São Paulo', uf: 'SP' },
-    { cep: '01310100', logradouro: 'Avenida Paulista', bairro: 'Bela Vista', cidade: 'São Paulo', uf: 'SP' }
-  ];
 
   function normalizarCep(valor) {
     const texto = String(valor ?? '').trim();
@@ -16,14 +12,32 @@
     return cep.slice(0, 5) + '-' + cep.slice(5);
   }
 
-  function consultarCep(entrada) {
+  async function consultarCep(entrada, obter = function (url) { return global.fetch(url); }) {
     const cep = normalizarCep(entrada);
     if (!cep) return { sucesso: false, mensagem: 'Digite um CEP com oito números, com ou sem hífen.' };
-    for (let indice = 0; indice < enderecosDemonstracao.length; indice++) {
-      const endereco = enderecosDemonstracao[indice];
-      if (endereco.cep === cep) return { sucesso: true, endereco: { ...endereco, cep: formatarCep(cep) } };
+    try {
+      const resposta = await obter('https://viacep.com.br/ws/' + cep + '/json/');
+      if (!resposta.ok) throw new Error('Falha HTTP');
+      const dados = await resposta.json();
+      if (dados && (dados.erro === true || dados.erro === 'true')) {
+        return { sucesso: false, mensagem: 'CEP não encontrado. Confira os números e tente outro CEP.' };
+      }
+      if (!dados || Array.isArray(dados) || normalizarCep(dados.cep) !== cep ||
+          typeof dados.localidade !== 'string' || !dados.localidade.trim() ||
+          typeof dados.uf !== 'string' || !/^[A-Z]{2}$/.test(dados.uf) ||
+          typeof dados.logradouro !== 'string' || typeof dados.bairro !== 'string') {
+        throw new Error('Resposta inválida');
+      }
+      return { sucesso: true, endereco: {
+        cep: formatarCep(cep),
+        logradouro: dados.logradouro || 'CEP geral de ' + dados.localidade,
+        bairro: dados.bairro || 'Não informado',
+        cidade: dados.localidade,
+        uf: dados.uf
+      } };
+    } catch {
+      return { sucesso: false, mensagem: 'Não foi possível consultar o ViaCEP. Confira sua conexão e tente novamente.' };
     }
-    return { sucesso: false, mensagem: 'Este CEP está fora da base de demonstração. Experimente 01001-000 ou 01310-100.' };
   }
 
   global.CepBasico = { normalizarCep, formatarCep, consultarCep };
