@@ -6,9 +6,9 @@
   "horarioDiario": "09:00",
   "etapaConcluidaLocalmente": 4,
   "ultimaImplementacaoEm": "2026-10-13",
-  "etapaPublicada": 3,
-  "ultimaPublicacaoEm": "2026-10-12",
-  "situacao": "aguardando_envio_etapa_4",
+  "etapaPublicada": 4,
+  "ultimaPublicacaoEm": "2026-10-13",
+  "situacao": "em_desenvolvimento_diario",
   "bloqueioComunicadoEm": "2026-10-06",
   "acessoConfirmadoEm": "2026-10-11",
   "contaEnvio": "joao-azevedoo",
@@ -16,5 +16,5 @@
   "autoriaConfiguradaEm": "2026-10-12",
   "autoriaHistoricaCorrigidaEm": "2026-10-12",
   "commitsComAutoriaCorrigida": 5,
-  "commitFuncionalPublicado": "bef605129adf01c0a6d8558f0671f34ba715323e"
+  "commitFuncionalPublicado": "559c951e46b541584a9d6c12c3c8b022c64e49ad"
 }

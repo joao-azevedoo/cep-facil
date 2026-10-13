@@ -25,7 +25,7 @@ Cada incremento acrescenta uma funcionalidade, atualiza README e CHANGELOG, regi
 | 1 | Implementada em 06/10, enviada em 11/10 | Código confirmado no GitHub. |
 | 2 | 11/10 | DOM e eventos implementados, verificados e enviados; commit funcional atual `ed420b5` confirmado no GitHub. |
 | 3 | 12/10 | Histórico local implementado, verificado e enviado; commit funcional atual `bef6051` confirmado no GitHub. |
-| 4 | 13/10 | ViaCEP implementado e verificado; envio pendente de conferência. |
+| 4 | 13/10 | ViaCEP implementado, verificado e enviado; commit funcional `559c951` confirmado no GitHub, com autoria `joao-azevedoo`. |
 | 5 | 14/10, às 9h | Concorrência, alternativa e cancelamento; última execução autorizada. |
 | 6 | Sem data autorizada | Clipboard e alternativa manual ficam pendentes. |
 | 7 | Sem data autorizada | GitHub Pages, revisão final e monetização ficam pendentes. |

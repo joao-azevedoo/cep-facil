@@ -10,7 +10,7 @@
 
 Verificação: doze testes automatizados aprovados, incluindo rede/HTTP/JSON inválidos e os cinco testes de persistência. No navegador, o ViaCEP retornou Praça da Sé em São Paulo e Avenida Rio Branco no Rio de Janeiro. Busca pelo botão e Enter, CEP inexistente, entrada incompleta, carregamento, persistência/reabertura do histórico e limpeza em link antigo foram conferidos. Falha de conexão simulada em página de QA local e ignorada liberou os controles, preservou o histórico e retornou o foco ao campo. Console sem erros ou avisos; prévia visual conferida.
 
-O envio desta etapa ainda aguarda conferência do commit remoto. A publicação do site continua prevista somente na etapa 7.
+Envio confirmado em 13/10/2026: commit funcional `559c951e46b541584a9d6c12c3c8b022c64e49ad` conferido em `refs/heads/main` de `joao-azevedoo/cep-facil`. A API do GitHub confirmou `joao-azevedoo` como autor e committer. O estado foi atualizado somente após essa evidência; a publicação do site continua prevista somente na etapa 7.
 
 ## 12/10/2026 — Correção autorizada da autoria anterior
 
