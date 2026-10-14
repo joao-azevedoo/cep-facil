@@ -13,7 +13,7 @@
   <script src="js/app.js" defer></script>
 </head>
 <body>
-  <header><a class="marca" href="./">CEP Fácil<span>.</span></a><span class="etiqueta">Consulta ViaCEP</span></header>
+  <header><a class="marca" href="./">CEP Fácil<span>.</span></a><span class="etiqueta">Consulta de CEP</span></header>
   <main>
     <h1>Consulte um CEP</h1>
     <p class="introducao">Encontre o endereço usando os oito números do CEP.</p>
@@ -21,11 +21,11 @@
       <h2 id="titulo-consulta">Qual endereço você procura?</h2>
       <form id="formulario-consulta" action="index.html" method="get" novalidate>
         <label for="cep">CEP</label>
-        <div class="linha-busca"><input id="cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="01001-000" maxlength="12" aria-describedby="dica mensagem"><button type="submit">Consultar</button></div>
+        <div class="linha-busca"><input id="cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="01001-000" maxlength="12" aria-describedby="dica mensagem"><button type="submit">Consultar</button><button id="cancelar-consulta" class="botao-sutil" type="button" hidden>Cancelar</button></div>
         <p id="dica" class="dica">Digite com ou sem hífen. Exemplo: 01001000. Pressione Enter ou clique em Consultar.</p>
       </form>
       <p id="mensagem" class="mensagem" role="status" hidden></p>
-      <section id="resultado" class="resultado" aria-labelledby="logradouro" hidden><span id="cep-resultado" class="cep-resultado"></span><h2 id="logradouro" tabindex="-1"></h2><dl><div><dt>Bairro</dt><dd id="bairro"></dd></div><div><dt>Cidade / UF</dt><dd id="cidade"></dd></div></dl><p class="dica">Endereço informado pelo <a href="https://viacep.com.br/" target="_blank" rel="noopener noreferrer">ViaCEP</a>.</p></section>
+      <section id="resultado" class="resultado" aria-labelledby="logradouro" hidden><span id="cep-resultado" class="cep-resultado"></span><h2 id="logradouro" tabindex="-1"></h2><dl><div><dt>Bairro</dt><dd id="bairro"></dd></div><div><dt>Cidade / UF</dt><dd id="cidade"></dd></div></dl><p class="dica">Endereço informado pelo <a id="fonte-endereco" href="https://viacep.com.br/" target="_blank" rel="noopener noreferrer">ViaCEP</a>.</p><div id="dados-estado" hidden><dl><div><dt>Estado</dt><dd id="estado"></dd></div><div><dt>Região</dt><dd id="regiao"></dd></div></dl><p class="dica">Estado e região informados pelo <a href="https://servicodados.ibge.gov.br/api/docs/localidades" target="_blank" rel="noopener noreferrer">IBGE</a>.</p></div><p id="aviso-estado" class="dica" role="status" hidden></p></section>
       <p id="vazio" class="vazio">Digite um CEP para consultar seu endereço.</p>
     </section>
     <section class="historico" aria-labelledby="titulo-historico">

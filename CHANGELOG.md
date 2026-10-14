@@ -1,5 +1,18 @@
 # Histórico de desenvolvimento
 
+## 14/10/2026 — Etapa 5: concorrência, alternativa e cancelamento
+
+- Consulta de endereço e lista de estados do IBGE iniciadas em paralelo por `Promise.all`; complemento de estado/região selecionado pela UF.
+- Falha, resposta inválida ou demora do IBGE preservam o endereço com um aviso.
+- Fonte alternativa BrasilAPI quando o ViaCEP falha, demora ou fornece resposta inválida; o resultado identifica a fonte. CEP inexistente no ViaCEP não aciona a alternativa.
+- Limite de seis segundos por requisição e leitura do JSON, com interrupção por `AbortController`, limpeza de temporizadores e de listeners.
+- Cancelamento pelo botão, pela edição do campo ou por uma nova busca. Respostas antigas não alteram resultado, foco ou histórico; consultas canceladas não são registradas.
+- README, plano e decisões atualizados. Clipboard, publicação do site e demais recursos das etapas 6 e 7 permanecem pendentes.
+
+Verificação: 23 testes automatizados aprovados. No navegador, consulta real do Rio de Janeiro com complemento do IBGE; ViaCEP indisponível simulado com resposta real da BrasilAPI; falha isolada do IBGE sem esconder o endereço; cancelamento manual preservando histórico e foco; fonte principal sem resposta acionando a alternativa após o limite. Resposta antiga de São Paulo, com transporte que ignorou abort, não substituiu a busca mais recente do Rio nem foi salva no histórico. Link antigo de São Paulo e limpeza do histórico após recarregar preservados. Console sem erros ou avisos; prévia visual conferida.
+
+O envio da etapa 5 ainda aguarda conferência do commit remoto. Após a última conferência, encerrar a rotina no prazo de 14/10 e relatar as etapas 6 e 7 pendentes.
+
 ## 13/10/2026 — Etapa 4: consulta real ao ViaCEP
 
 - Base de demonstração substituída pela consulta HTTPS ao ViaCEP com `fetch`, `async`/`await` e JSON; CEP validado antes da requisição.

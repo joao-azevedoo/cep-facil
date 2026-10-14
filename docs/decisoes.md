@@ -1,5 +1,15 @@
 # Decisões do CEP Fácil
 
+## 14/10/2026 — Concorrência e cancelamento
+
+- Consultar a lista de UFs em `https://servicodados.ibge.gov.br/api/v1/localidades/estados`, conforme a [documentação do IBGE](https://servicodados.ibge.gov.br/api/docs/localidades). Essa lista pode iniciar em paralelo ao endereço; depois, selecionar pela sigla da UF. Não enviar o CEP ao IBGE nem consultar municípios antes de conhecer o endereço.
+- Combinar as consultas com `Promise.all`, convertendo a falha do IBGE em complemento indisponível. Validar o nome do estado e da região e informar a indisponibilidade, preservando o endereço encontrado.
+- Usar `https://brasilapi.com.br/api/cep/v1/{cep}` como fonte alternativa, conforme a [documentação da BrasilAPI](https://brasilapi.com.br/docs). Mapear `city`, `state`, `street` e `neighborhood` para os campos existentes e conferir o CEP retornado. Somente falha da fonte principal aciona a alternativa; sua resposta de CEP inexistente é definitiva nessa consulta. HTTP 404 da alternativa também informa CEP não encontrado.
+- Limitar cada requisição e sua leitura de JSON a seis segundos. Usar controlador próprio por requisição, timer e `Promise.race`; isso também impede espera indefinida se um transporte ignorar abort. Remover timer e listener em `finally`. A alternativa recebe um novo limite, totalizando até dois limites sucessivos para o endereço.
+- Compartilhar o sinal da consulta entre endereço e IBGE. Cancelamento humano não deve disparar a alternativa. Abortar a consulta anterior ao editar, cancelar ou começar outra e usar um identificador crescente no DOM: somente a consulta atual pode apresentar dados, orientar foco ou registrar histórico.
+- Manter os controles disponíveis durante a busca e oferecer Cancelar. Exibir informações e cancelamento em cores neutras, usando tokens Organic. Indicar as fontes de endereço e complemento, sem preencher estado/região com dados de outra origem quando o IBGE falhar.
+- Verificar falhas e respostas antigas com transportes controlados nos testes e páginas locais de QA ignoradas. A alternativa e o complemento também foram conferidos com os serviços reais no navegador. Não antecipar as etapas 6 e 7 ao encerrar o prazo de 14/10.
+
 ## 13/10/2026 — ViaCEP
 
 - Substituir a pesquisa demonstrativa por `https://viacep.com.br/ws/{cep}/json/`, conforme a [documentação oficial](https://viacep.com.br/). Validar oito dígitos localmente antes de enviar qualquer requisição.

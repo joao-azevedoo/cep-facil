@@ -26,7 +26,7 @@ Cada incremento acrescenta uma funcionalidade, atualiza README e CHANGELOG, regi
 | 2 | 11/10 | DOM e eventos implementados, verificados e enviados; commit funcional atual `ed420b5` confirmado no GitHub. |
 | 3 | 12/10 | Histórico local implementado, verificado e enviado; commit funcional atual `bef6051` confirmado no GitHub. |
 | 4 | 13/10 | ViaCEP implementado, verificado e enviado; commit funcional `559c951` confirmado no GitHub, com autoria `joao-azevedoo`. |
-| 5 | 14/10, às 9h | Concorrência, alternativa e cancelamento; última execução autorizada. |
+| 5 | 14/10 | Concorrência com IBGE, alternativa e cancelamento implementados e verificados; envio pendente de conferência. Última etapa autorizada dentro do prazo. |
 | 6 | Sem data autorizada | Clipboard e alternativa manual ficam pendentes. |
 | 7 | Sem data autorizada | GitHub Pages, revisão final e monetização ficam pendentes. |
 
