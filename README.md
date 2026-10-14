@@ -107,7 +107,7 @@ O rodapé aponta para o perfil do autor da conta de destino. O site pessoal do a
 
 ## Calendário atual
 
-O acesso ao repositório foi liberado em 11/10. O usuário estendeu a rotina até **14/10/2026**, mantendo uma nova etapa por dia. O histórico foi implementado em 12/10, o ViaCEP em 13/10 e a etapa de concorrência em 14/10. Após a última conferência, a rotina deve encerrar no prazo autorizado. Permanecem pendentes **etapa 6: Clipboard e alternativa manual**, e **etapa 7: GitHub Pages, revisão final e monetização**. O site ainda não foi publicado neste repositório. O plano registra o calendário original e o reajuste sem alterar datas dos commits.
+O acesso ao repositório foi liberado em 11/10. O usuário estendeu a rotina até **14/10/2026**, mantendo uma nova etapa por dia. O histórico foi implementado em 12/10, o ViaCEP em 13/10 e a etapa de concorrência em 14/10. A etapa 5 foi enviada e conferida no GitHub, com autoria `joao-azevedoo`. A automação foi excluída após essa última conferência, encerrando a rotina no prazo autorizado. Permanecem pendentes **etapa 6: Clipboard e alternativa manual**, e **etapa 7: GitHub Pages, revisão final e monetização**. O site ainda não foi publicado neste repositório. O plano registra o calendário original e o reajuste sem alterar datas dos commits.
 
 ## Autoria dos commits
 

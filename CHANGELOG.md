@@ -11,7 +11,9 @@
 
 Verificação: 23 testes automatizados aprovados. No navegador, consulta real do Rio de Janeiro com complemento do IBGE; ViaCEP indisponível simulado com resposta real da BrasilAPI; falha isolada do IBGE sem esconder o endereço; cancelamento manual preservando histórico e foco; fonte principal sem resposta acionando a alternativa após o limite. Resposta antiga de São Paulo, com transporte que ignorou abort, não substituiu a busca mais recente do Rio nem foi salva no histórico. Link antigo de São Paulo e limpeza do histórico após recarregar preservados. Console sem erros ou avisos; prévia visual conferida.
 
-O envio da etapa 5 ainda aguarda conferência do commit remoto. Após a última conferência, encerrar a rotina no prazo de 14/10 e relatar as etapas 6 e 7 pendentes.
+Envio confirmado em 14/10/2026: commit funcional `04c7afa12a5327f5973f7ace1c5d189738af3e7f` conferido em `refs/heads/main` de `joao-azevedoo/cep-facil`. A API do GitHub confirmou `joao-azevedoo` como autor e committer. O estado foi atualizado somente após essa evidência.
+
+A automação `cep-f-cil-evolu-o-di-ria` foi excluída no aplicativo após a última conferência em 14/10, encerrando a rotina no prazo autorizado. O projeto permanece na etapa 5 de 7. Pendências: etapa 6 (Clipboard e alternativa manual) e etapa 7 (GitHub Pages, revisão final e monetização). O site não foi publicado neste repositório.
 
 ## 13/10/2026 — Etapa 4: consulta real ao ViaCEP
 

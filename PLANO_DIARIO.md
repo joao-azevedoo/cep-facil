@@ -26,11 +26,11 @@ Cada incremento acrescenta uma funcionalidade, atualiza README e CHANGELOG, regi
 | 2 | 11/10 | DOM e eventos implementados, verificados e enviados; commit funcional atual `ed420b5` confirmado no GitHub. |
 | 3 | 12/10 | Histórico local implementado, verificado e enviado; commit funcional atual `bef6051` confirmado no GitHub. |
 | 4 | 13/10 | ViaCEP implementado, verificado e enviado; commit funcional `559c951` confirmado no GitHub, com autoria `joao-azevedoo`. |
-| 5 | 14/10 | Concorrência com IBGE, alternativa e cancelamento implementados e verificados; envio pendente de conferência. Última etapa autorizada dentro do prazo. |
+| 5 | 14/10 | Concorrência com IBGE, alternativa e cancelamento implementados, verificados e enviados; commit funcional `04c7afa` confirmado no GitHub, com autoria `joao-azevedoo`. |
 | 6 | Sem data autorizada | Clipboard e alternativa manual ficam pendentes. |
 | 7 | Sem data autorizada | GitHub Pages, revisão final e monetização ficam pendentes. |
 
-Esse calendário é uma previsão sujeita às verificações de cada etapa. Ao encerrar em 14/10, relatar o que permanecer pendente. Não antecipar as etapas 6 e 7 nem continuar mudanças após o prazo sem nova autorização.
+A rotina foi encerrada em 14/10 após a conferência da etapa 5 e a exclusão da automação no aplicativo. As etapas 6 e 7 continuam pendentes e o site ainda não foi publicado neste repositório. Não continuar mudanças após o prazo sem nova autorização.
 
 Em 12/10, o usuário autorizou corrigir a autoria dos cinco commits antigos para `joao-azevedoo`. A correção alterou os identificadores Git e foi conferida no GitHub; arquivos, mensagens e datas foram preservados. O `CHANGELOG.md` mantém os identificadores originais como registro dos envios e apresenta a correspondência com os atuais. A sequência das etapas continua igual.
 
@@ -44,4 +44,4 @@ Se o acesso deixar de estar disponível, a rotina mantém a etapa atual pendente
 
 ## Rotina local
 
-Manter este computador ligado, o aplicativo aberto e a pasta disponível às 9h. A automação neste chat deverá ler este plano e o estado, realizar somente a próxima etapa autorizada e verificar o envio ao repositório de destino. Comunicará conclusão, falha nova ou ação necessária; não repetirá avisos quando o bloqueio não mudar.
+A automação `cep-f-cil-evolu-o-di-ria` foi excluída em 14/10 após a última conferência, como combinado. Nenhuma nova execução está agendada. Permanecem para uma nova autorização a etapa 6 (Clipboard e alternativa manual) e a etapa 7 (GitHub Pages, revisão final e monetização).

@@ -6,9 +6,12 @@
   "horarioDiario": "09:00",
   "etapaConcluidaLocalmente": 5,
   "ultimaImplementacaoEm": "2026-10-14",
-  "etapaPublicada": 4,
-  "ultimaPublicacaoEm": "2026-10-13",
-  "situacao": "aguardando_envio_etapa_5",
+  "etapaPublicada": 5,
+  "ultimaPublicacaoEm": "2026-10-14",
+  "situacao": "rotina_encerrada_com_pendencias",
+  "rotinaEncerradaEm": "2026-10-14",
+  "etapasPendentes": [6, 7],
+  "sitePublicado": false,
   "bloqueioComunicadoEm": "2026-10-06",
   "acessoConfirmadoEm": "2026-10-11",
   "contaEnvio": "joao-azevedoo",
@@ -16,5 +19,5 @@
   "autoriaConfiguradaEm": "2026-10-12",
   "autoriaHistoricaCorrigidaEm": "2026-10-12",
   "commitsComAutoriaCorrigida": 5,
-  "commitFuncionalPublicado": "559c951e46b541584a9d6c12c3c8b022c64e49ad"
+  "commitFuncionalPublicado": "04c7afa12a5327f5973f7ace1c5d189738af3e7f"
 }
